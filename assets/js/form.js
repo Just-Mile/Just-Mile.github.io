@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Simula el envío (puedes conectar con EmailJS o tu backend)
+    
     showMessage("Mensaje enviado correctamente. ¡Gracias por contactarme!", "success");
     form.reset();
   });
@@ -34,3 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
     messageBox.style.color = type === "error" ? "#e63946" : "#2a9d8f";
   }
 });
+
