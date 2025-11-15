@@ -1,0 +1,144 @@
+/* 🔸 Hereda tipografía y fondo desde main.css */
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  /* ahora se organiza en filas */
+  align-items: center;
+  /* centra las filas horizontalmente */
+  gap: 2rem;
+  /* espacio entre filas */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  /* centra los íconos en la fila */
+  gap: 2rem;
+  /* espacio entre íconos de la misma fila */
+  flex-wrap: wrap;
+  /* opcional, para responsive */
+}
+
+.contact-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+}
+
+.contact-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.contact-section p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* ✅ Centra horizontalmente incluso con número impar */
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-card img {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 700px) {
+  .contact-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-grid {
+    gap: 1.2rem;
+  }
+}
+
+.contact-form {
+  margin-top: 3rem;
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none;
+}
+
+button {
+  background-color: var(--primary, #0077ff);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+#formMessage {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
