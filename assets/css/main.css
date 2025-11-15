@@ -2,11 +2,8 @@
 
 :root {
   --color-primario: #7c3aed;
-  /* violeta brillante */
   --color-secundario: #a78bfa;
-  /* violeta suave */
   --color-acento: #ec4899;
-  /* rosado de acento */
   --color-fondo: #f8fafc;
   --color-texto: #1f2937;
   --color-blanco: #fff;
@@ -44,7 +41,6 @@ img {
   display: block;
 }
 
-/* Botones */
 .btn-primario,
 .btn-secundario,
 .btn-contacto {
@@ -77,7 +73,6 @@ img {
   color: var(--color-blanco);
 }
 
-/* Footer */
 footer {
   text-align: center;
   background: #111827;
@@ -92,13 +87,9 @@ footer p {
 
 footer .social-links {
   display: flex;
-  /* hace que los elementos estén en fila */
   justify-content: center;
-  /* centra los íconos horizontalmente */
   align-items: center;
-  /* alinea verticalmente */
   gap: 12px;
-  /* espacio entre cada icono */
   margin-top: 15px;
 }
 
@@ -120,9 +111,6 @@ footer .social-links img:hover {
   text-align: center;
 }
 
-/* ==============================
-   🏠 HERO SECTION
-============================== */
 .hero {
   display: flex;
   align-items: center;
@@ -159,7 +147,6 @@ footer .social-links img:hover {
   flex-wrap: wrap;
 }
 
-/* 🌸 Imagen con efecto flotante */
 .hero-img {
   flex: 1;
   text-align: center;
@@ -173,7 +160,6 @@ footer .social-links img:hover {
   box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
 }
 
-/* Orbita animada alrededor de la imagen */
 .orbit::before {
   content: "";
   position: absolute;
@@ -187,7 +173,6 @@ footer .social-links img:hover {
   animation: girar 8s linear infinite;
 }
 
-/* ✨ Animaciones */
 @keyframes flotar {
 
   0%,
@@ -222,7 +207,6 @@ footer .social-links img:hover {
   }
 }
 
-/* 📱 Responsive */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
@@ -244,9 +228,6 @@ footer .social-links img:hover {
   }
 }
 
-/* ==============================
-   🌟 SECCIÓN RESUMEN
-============================== */
 .resumen {
   display: flex;
   justify-content: center;
@@ -280,4 +261,5 @@ footer .social-links img:hover {
 .resumen-item p {
   margin-bottom: 15px;
   font-size: 0.95rem;
+
 }
