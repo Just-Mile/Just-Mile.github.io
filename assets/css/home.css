@@ -1,6 +1,3 @@
-/* ===========================
-   🏠 HOME / HERO SECTION
-=========================== */
 .hero {
   display: flex;
   align-items: center;
@@ -40,7 +37,6 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* 📱 Responsive */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
@@ -56,9 +52,6 @@
   }
 }
 
-/* ===========================
-   📄 SECCIÓN RESUMEN
-=========================== */
 .resumen {
   display: flex;
   justify-content: center;
@@ -120,4 +113,5 @@
 .companero-item h3 {
   margin-bottom: 15px;
   font-size: 1.3rem;
+
 }
