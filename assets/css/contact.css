@@ -1,13 +1,9 @@
-/* 🔸 Hereda tipografía y fondo desde main.css */
 
 .contact-grid {
   display: flex;
   flex-direction: column;
-  /* ahora se organiza en filas */
   align-items: center;
-  /* centra las filas horizontalmente */
   gap: 2rem;
-  /* espacio entre filas */
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -15,11 +11,8 @@
 .contact-row {
   display: flex;
   justify-content: center;
-  /* centra los íconos en la fila */
   gap: 2rem;
-  /* espacio entre íconos de la misma fila */
   flex-wrap: wrap;
-  /* opcional, para responsive */
 }
 
 .contact-section {
@@ -44,7 +37,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* ✅ Centra horizontalmente incluso con número impar */
   align-items: center;
   gap: 2rem;
   max-width: 1000px;
@@ -77,7 +69,6 @@
   margin-bottom: 10px;
 }
 
-/* 🔹 Responsive */
 @media (max-width: 700px) {
   .contact-card {
     width: 120px;
@@ -141,4 +132,5 @@ button:hover {
   text-align: center;
   margin-top: 1rem;
   font-weight: 500;
+
 }
