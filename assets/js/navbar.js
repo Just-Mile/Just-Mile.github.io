@@ -1,4 +1,4 @@
-// assets/js/navbar.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
       menuToggle.classList.toggle("open");
     });
   }
-
-  // Efecto suave al hacer scroll a secciones del mismo sitio
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -25,3 +23,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
